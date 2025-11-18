@@ -1,0 +1,11 @@
+com\github\VitorMarczewski\Controller\TestLogController.class
+com\github\VitorMarczewski\repository\PersonRepository.class
+com\github\VitorMarczewski\Exception\ResourceNotFoundException.class
+com\github\VitorMarczewski\data\dto\PersonDTO.class
+com\github\VitorMarczewski\mapper\ObjectMapper.class
+com\github\VitorMarczewski\Startup.class
+com\github\VitorMarczewski\Controller\PersonController.class
+com\github\VitorMarczewski\services\PersonServices.class
+com\github\VitorMarczewski\Exception\ExceptionResponse.class
+com\github\VitorMarczewski\Model\Person.class
+com\github\VitorMarczewski\Exception\Handler\CustomEntityResponseHandler.class

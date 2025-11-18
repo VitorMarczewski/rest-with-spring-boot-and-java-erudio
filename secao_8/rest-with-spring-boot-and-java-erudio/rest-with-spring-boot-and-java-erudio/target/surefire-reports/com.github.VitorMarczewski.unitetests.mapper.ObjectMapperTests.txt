@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: com.github.VitorMarczewski.unitetests.mapper.ObjectMapperTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.063 s <<< FAILURE! -- in com.github.VitorMarczewski.unitetests.mapper.ObjectMapperTests
+com.github.VitorMarczewski.unitetests.mapper.ObjectMapperTests.parserDTOListToEntityListTest -- Time elapsed: 0.029 s <<< ERROR!
+java.lang.NoClassDefFoundError: com/github/VitorMarczewski/data/dto/PersonDTO
+	at com.github.VitorMarczewski.unitetests.mapper.mocks.MockPerson.mockDTO(MockPerson.java:47)
+	at com.github.VitorMarczewski.unitetests.mapper.mocks.MockPerson.mockDTOList(MockPerson.java:31)
+	at com.github.VitorMarczewski.unitetests.mapper.ObjectMapperTests.parserDTOListToEntityListTest(ObjectMapperTests.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.ClassNotFoundException: com.github.VitorMarczewski.data.dto.PersonDTO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 6 more
+
+com.github.VitorMarczewski.unitetests.mapper.ObjectMapperTests.parseEntityToDTOTest -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NoClassDefFoundError: com/github/VitorMarczewski/Model/Person
+	at com.github.VitorMarczewski.unitetests.mapper.mocks.MockPerson.mockEntity(MockPerson.java:37)
+	at com.github.VitorMarczewski.unitetests.mapper.mocks.MockPerson.mockEntity(MockPerson.java:13)
+	at com.github.VitorMarczewski.unitetests.mapper.ObjectMapperTests.parseEntityToDTOTest(ObjectMapperTests.java:26)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.ClassNotFoundException: com.github.VitorMarczewski.Model.Person
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 6 more
+
+com.github.VitorMarczewski.unitetests.mapper.ObjectMapperTests.parseDTOToEntityTest -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NoClassDefFoundError: com/github/VitorMarczewski/data/dto/PersonDTO
+	at com.github.VitorMarczewski.unitetests.mapper.mocks.MockPerson.mockDTO(MockPerson.java:47)
+	at com.github.VitorMarczewski.unitetests.mapper.mocks.MockPerson.mockDTO(MockPerson.java:17)
+	at com.github.VitorMarczewski.unitetests.mapper.ObjectMapperTests.parseDTOToEntityTest(ObjectMapperTests.java:64)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.ClassNotFoundException: com.github.VitorMarczewski.data.dto.PersonDTO
+	... 6 more
+
+com.github.VitorMarczewski.unitetests.mapper.ObjectMapperTests.parseEntityListToDTOListTest -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NoClassDefFoundError: com/github/VitorMarczewski/Model/Person
+	at com.github.VitorMarczewski.unitetests.mapper.mocks.MockPerson.mockEntity(MockPerson.java:37)
+	at com.github.VitorMarczewski.unitetests.mapper.mocks.MockPerson.mockEntityList(MockPerson.java:23)
+	at com.github.VitorMarczewski.unitetests.mapper.ObjectMapperTests.parseEntityListToDTOListTest(ObjectMapperTests.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.ClassNotFoundException: com.github.VitorMarczewski.Model.Person
+	... 6 more
+
